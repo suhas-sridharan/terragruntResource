@@ -1,16 +1,16 @@
+locals {
+  # Automatically load environment-level variables
 
-
-terraform {
-//  source = "git::git@github.com:Tathagat-289/terraformResources.git//module3"
-  source = "github.com/Tathagat-289/terraformResources//module3"
 }
 
-inputs = {
-  instance_type  = "t2.micro"
-  tfversion = "nonprod"
-  sleep = "10"
-  tfv = "tfversion1"
-  sl = "sl1"
-  tfmodule3 = "tfmodule4"
-  slmodule3 = "sleepmodule4"
+# Terragrunt will copy the Terraform configurations specified by the source parameter, along with any files in the
+# working directory, into a temporary folder, and execute your Terraform commands in that folder.
+terraform {
+//  source = "git::git@github.com:Tathagat-289/terraformResources.git//Many-vars"
+  source = "github.com/Tathagat-289/terraformResources//Many-vars"
+}
+
+# Include all settings from the root terragrunt.hcl file
+include {
+  path = find_in_parent_folders()
 }
