@@ -9,5 +9,10 @@ locals {
   parent_var = "parent_var"
 }
 
+inputs = {
+  tfmodule3 = "10"
+  slmodule3 = "20"
+}
+
 
 
