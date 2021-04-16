@@ -12,7 +12,7 @@ include {
 }
 
 inputs = {
-  tfv = "tfversion1"
-  sl = "sl1"
+  tfmodule3 = "tfversion1"
+  slmodule3 = "sl1"
 }
 
