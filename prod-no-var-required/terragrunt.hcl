@@ -11,8 +11,3 @@ include {
   path = find_in_parent_folders()
 }
 
-inputs = {
-  tfmodule3 = "10"
-  slmodule3 = "20"
-}
-
